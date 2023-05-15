@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alarm Clock</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body
+    {
+        background-image:url("alarm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      text-align: center;
+      background-color:red;
+    }
+    #heading
+    {
+        font-size:50px;
+        font-weight:bold;
+    }
+    label
+    {
+        color:white;
+        font-size: medium;
+    }
+    button{
+        color:black;
+        font-size: medium;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="heading">Alarm Clock</h1>
+    <div id="time"></div>
+    <div>
+      <label for="alarmTime">Set Alarm:</label>
+      <input type="time" id="alarmTime">
+      <button id="setAlarmBtn">Set</button>
+      <button id="clearAlarmBtn">Clear</button>
+    </div>
+  </div>
+
+  <script src="clock.js"></script>
+</body>
+</html>
